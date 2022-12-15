@@ -1,6 +1,6 @@
 # Serverless Framework With datawrangler/awswrangler with Lambda on existing S3 Bucket
 <img src="./images/lambdaS3.png" align="right"
-     width="463" height="339">
+     width="413" height="289">
 
 # Overview
 Walkthrough on how to deploy `Serverless Framework` on AWS `Data Wrangler` Python Library with an AWS `Lambda Function` triggered while uploading data on an existing S3 bucket and reading/writing data on the same S3.
