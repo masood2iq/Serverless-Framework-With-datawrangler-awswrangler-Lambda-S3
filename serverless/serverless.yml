@@ -34,7 +34,7 @@ provider:
 
 # you can define your custom resources here
 custom:
-  DataS3BucketName: s3-bucket-us-east1-3652
+  S3BucketName: bucket-unique-name
   product: serverless
 
 # Resources section defines metadata for the Resources.
@@ -85,7 +85,7 @@ resources:
             Fn::GetAtt:
               - BucketNotificationsHandler
               - Arn
-          BucketName: ${self:custom.DataS3BucketName}
+          BucketName: ${self:custom.S3BucketName}
           NotificationConfiguration:
             LambdaFunctionConfigurations:
               - Events:
@@ -219,7 +219,7 @@ resources:
           - python3.8
           - python3.7
         Content:
-          S3Bucket: ${self:custom.DataS3BucketName}
+          S3Bucket: ${self:custom.S3BucketName}
           S3Key: awswrangler-layer-2.18.0-py3.8.zip
         LicenseInfo: MIT
 
@@ -267,4 +267,4 @@ resources:
               - Arn
           Principal: s3.amazonaws.com
           SourceAccount: !Ref 'AWS::AccountId'
-          SourceArn: !Sub 'arn:aws:s3:::${self:custom.DataS3BucketName}'
+          SourceArn: !Sub 'arn:aws:s3:::${self:custom.S3BucketName}'
