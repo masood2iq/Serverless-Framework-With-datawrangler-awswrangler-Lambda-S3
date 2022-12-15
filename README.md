@@ -17,7 +17,7 @@ Please follow the steps to walk through the entire process.
 
 ### **Step - 1**
 ----
-In S3 bucket create two folders as `input` and `output`. Also upload the `awswrangler-layer-2.18.0-py3.8.zip` file, which you can download from the [link](Releases · aws/aws-sdk-pandas (github.com)).
+In S3 bucket create two folders as `input` and `output`. Also upload the `awswrangler-layer-2.18.0-py3.8.zip` file, which you can download from the [link](https://github.com/aws/aws-sdk-pandas/releases).
 
 ![](./images/image11.png)
 
